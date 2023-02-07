@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { userList } from './user.const';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,4 @@ import { userList } from './user.const';
 })
 export class AppComponent {
   title = 'angular-cli';
-  list = userList;
 }
