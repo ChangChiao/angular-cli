@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   isMax: boolean = true
+  status: number = 0;
+  constructor() {
+    this.status = Math.random() > 0.5 ? 1 : 0;
+  }
+
+  getColor() {
+    return this.status === 1 ? 'green' : 'red';
+  }
 }

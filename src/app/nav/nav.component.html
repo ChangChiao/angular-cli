@@ -1,4 +1,8 @@
 <p>nav works!</p>
 <!-- 條件判斷 -->
-<div *ngIf="isMax">Yes! isMax!</div>
+<div *ngIf="isMax" else small>Yes! isMax!</div>
 <!-- if else -->
+<ng-template #small>
+    <p>No! isSmall!</p>
+</ng-template>
+<h3 [ngStyle]="{backgroundColor: getColor()}">server status</h3>
