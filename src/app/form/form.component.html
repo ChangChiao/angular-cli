@@ -1,0 +1,7 @@
+  <!-- 雙向綁定 -->
+  <input type="text"  [(ngModel)]="name">
+  name: {{ name }}
+  <!-- event binding -->
+  <button (click)="changeTitle()">change</button>
+  Title: {{ title}}
+  <input type="text" (input)="handleChange($event)">
