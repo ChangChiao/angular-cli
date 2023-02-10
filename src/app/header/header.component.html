@@ -1,18 +1,23 @@
-<header class="header">
-  header works! la la
-  <span [id]="'title'">title</span>
-  <span [id]="dynamicTitle"></span>
-  <span class="title">class</span>
-  {{ 1 + 1 }}
-  <h3 class="text-xl p-4 leading-2"></h3>
-  <!-- 條件式綁定class -->
-  <h3 [class.h3-dom]="isShow"></h3>
-  <h3 [class]="{ 'text-sm': true, 'text-red': false }"></h3>
-  <h3 [class]="['h3-dom', 'title-dom']">pic</h3>
-  <!-- inline style -->
-  <h3 [style.width]="'200px'"></h3>
-  <!-- 較少見 -->
-  <h3 [style.width.px]="100"></h3>
-  <h3 [style]="'background:#ddd;color:steelblue'">hi</h3>
-  <h3 [style]="{ background: '#ddd', color: 'steelblue' }">hi</h3>
-</header>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Recipe Book</a>
+        </div>
+        
+        <div class="d-flex">
+            <ul class="nav d-flex justify-content-between">
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Shopping List</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Save Data</a></li>
+                        <li><a href="#">Fetch Data</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
+  dynamicTitle: string = 'box';
+  isShow: boolean = true;
   name: string = '';
   title: string = '3Q!'
   inputValue: string = '';
