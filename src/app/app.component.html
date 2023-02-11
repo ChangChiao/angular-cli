@@ -325,9 +325,9 @@
     </a>
 </div> -->
 
-<app-header></app-header>
-<app-recipes></app-recipes>
-<app-shopping-list></app-shopping-list>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+<app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
 <!-- <app-form></app-form>
 <app-nav></app-nav>
 <app-main></app-main> -->
