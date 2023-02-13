@@ -7,13 +7,17 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipes-item.component.scss'],
 })
 export class RecipesItemComponent {
-  @Input() recipe: Recipe = { name: '', description: '', imagePath: '', ingredients:[] };
+  @Input() recipe: Recipe = {
+    name: '',
+    description: '',
+    imagePath: '',
+    ingredients: [],
+  };
+  @Input() index: number = 0;
   // @Output() recipeSelected = new EventEmitter<void>();
-  constructor(private recipeService: RecipeService) {
-
-  }
-  onSelect() {
-    // this.recipeSelected.emit();
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+  constructor(private recipeService: RecipeService) {}
+  ngOnInit() {}
+  // onSelect() {
+  //   this.recipeService.recipeSelected.emit(this.recipe);
+  // }
 }
