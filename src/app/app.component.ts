@@ -9,8 +9,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-cli';
-  loadedFeature = 'recipe';
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
+  // loadedFeature = 'recipe';
+  // onNavigate(feature: string) {
+  //   this.loadedFeature = feature;
+  // }
 }
